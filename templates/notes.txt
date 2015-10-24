@@ -1,0 +1,143 @@
+
+
+
+
+
+
+<!-- Bootstrap collapsible navbar -->
+	<nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+
+<div class="container main" style='PADDING:0; margin:0;>
+		<form action='/submitform' method='POST'>
+	        <div class='row' STYLE='PADDING:10PX 0;'>
+	            <div class='col-md-2'>
+					<lable for='symbol' class='labels'>Ticker Symbol</lable>
+	            	<input type="text" class='form-control' name="symbol" placeholder="Ticker Symbol" required>
+	            </div>
+	            
+	          	<div class='col-md-4'>
+	                <lable for='marketCap' class='labels'>Market Cap</lable>
+	                <select class='form-control' id='select' name='marketCap'>
+	                    <option value='largecap'>Large Cap</option>
+	                    <option value='midcap'>Mid Cap</option>
+	                    <option value='smallcap'>Small Cap</option>
+	                </select>
+	            </div>
+	          	<div class='col-md-4'>
+	                <lable for='sector' class='labels'>Sector</lable>
+	                <select class='form-control' id='select' name='sector'>
+	                    <option value='basicMaterials'>Basic Materials</option>
+	                    <option value='conglomerates'>Conglomerates</option>
+	                    <option value='consumerGoods'>Consumer Goods</option>
+	                    <option value='financial'>Financial</option>
+	                    <option value='healthcare'>Healthcare</option>
+	                    <option value='industrial'>Industrial</option>
+	                    <option value='services'>Services</option>
+	                    <option value='technology'>Technology</option>
+	                    <option value='utilities'>Utilities</option>
+	                </select>
+	            </div>
+	            <div class='col-md-1'>
+					<button class="showBtn btn btn-primary roundCorners" type="submit" style='margin:16px 0 0 0;'><strong>Submit</strong></button>
+	            </div>  
+	        </div><!-- /row -->
+
+        </form><!--/input-group -->
+    </div>
+
+
+
+
+
+
+
+
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+		    <div class="nav navbar-nav ">
+		        <div class="navbar-brand" href="/">TITLE<span class=''></span></div>
+			    
+			    
+		    </div>
+	    </div>
+
+	  </div><!-- /.container-fluid -->
+	</nav><!-- /nav -->
+
+</head>
+
+<body>
+
+
+<!-- MAIN CONTENT -->
+	<div class="container main" style='PADDING:100PX 0;>
+		<form action='/submitform' method='POST'>
+	        <div class='row' STYLE='PADDING:10PX 0;'>
+	            <div class='col-md-2'>
+					<lable for='symbol' class='labels'>Ticker Symbol</lable>
+	            	<input type="text" class='form-control' name="symbol" placeholder="Ticker Symbol" required>
+	            </div>
+	            
+	          	<div class='col-md-4'>
+	                <lable for='marketCap' class='labels'>Market Cap</lable>
+	                <select class='form-control' id='select' name='marketCap'>
+	                    <option value='largecap'>Large Cap</option>
+	                    <option value='midcap'>Mid Cap</option>
+	                    <option value='smallcap'>Small Cap</option>
+	                </select>
+	            </div>
+	          	<div class='col-md-4'>
+	                <lable for='sector' class='labels'>Sector</lable>
+	                <select class='form-control' id='select' name='sector'>
+	                    <option value='basicMaterials'>Basic Materials</option>
+	                    <option value='conglomerates'>Conglomerates</option>
+	                    <option value='consumerGoods'>Consumer Goods</option>
+	                    <option value='financial'>Financial</option>
+	                    <option value='healthcare'>Healthcare</option>
+	                    <option value='industrial'>Industrial</option>
+	                    <option value='services'>Services</option>
+	                    <option value='technology'>Technology</option>
+	                    <option value='utilities'>Utilities</option>
+	                </select>
+	            </div>
+	            <div class='col-md-1'>
+					<button class="showBtn btn btn-primary roundCorners" type="submit" style='margin:16px 0 0 0;'><strong>Submit</strong></button>
+	            </div>  
+	        </div><!-- /row -->
+
+        </form><!--/input-group -->
+
+
+
+
+
+	          	<!-- <div class='col-md-4'>
+	                <lable for='marketCap' class='labels'>Market Cap</lable>
+	                <select class='form-control' id='select' name='marketCap'>
+	                    <option value='largecap'>Large Cap</option>
+	                    <option value='midcap'>Mid Cap</option>
+	                    <option value='smallcap'>Small Cap</option>
+	                </select>
+	            </div>
+	          	<div class='col-md-4'>
+	                <lable for='sector' class='labels'>Sector</lable>
+	                <select class='form-control' id='select' name='sector'>
+	                    <option value='basicMaterials'>Basic Materials</option>
+	                    <option value='conglomerates'>Conglomerates</option>
+	                    <option value='consumerGoods'>Consumer Goods</option>
+	                    <option value='financial'>Financial</option>
+	                    <option value='healthcare'>Healthcare</option>
+	                    <option value='industrial'>Industrial</option>
+	                    <option value='services'>Services</option>
+	                    <option value='technology'>Technology</option>
+	                    <option value='utilities'>Utilities</option>
+	                    <option value='ETF'>ETF</option> 
+	                </select>-->
+
