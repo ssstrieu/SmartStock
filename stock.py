@@ -25,14 +25,11 @@ def format_symbols(symbols):
 
 # Given a list of stock symbols, returns the API response in JSON
 def stock_results(symbols):
-	result = requests.get(stock_url(symbols))
-	return result.json()
-
-print stock_url(['FB'])
-print '\n'
-print stock_url(['FB', 'YHOO', 'GOOG'])
-
-
-
+	result = requests.get(stock_url(symbols)).json()
+	quote = result['query']['results']['quote']
+	if type(quote) is dict:
+		return [quote]
+	else:
+		return quote
 
 
