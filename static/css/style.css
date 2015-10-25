@@ -27,3 +27,8 @@ table{
 	background-color: #fff;
 
 }
+
+.hide{
+	visibility: hidden;
+
+}
