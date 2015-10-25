@@ -50,9 +50,12 @@
 		
 	</div><!--/.searchbar-->
 
+<div class='jumbotron'>
 
+	<h1>Welcome to SmartStock</h1>
+	<p>Enter up to 5 ticker symbols to compare key stats like Share Price, Growth Rate, Expense Ratio and more! </p>
 
-<!-- {{ if }} -->
+</div>
 
 <div class='container chart-container'>
 	<h1>CHART HERE</h1>
@@ -60,7 +63,7 @@
 		<tr class='info'>
 			<th>Symbol</th>
 			<th>Name</th>
-			<th>Price per Share</th>
+			<th>Price/Share</th>
 			<th>Market Cap</th>
 			<th>Sector</th>
 			<th>Expense Ratio</th>
@@ -105,7 +108,8 @@
 			<td></td>
 		</tr>
 
-<!-- 		{% for i in stocklist %}
+<!-- hook up to backend here to generate table rows		
+		{% for i in stocklist %}
 			<tr>
 				<td><a href='{{ link }}'>{{ symbol }} </a></td>
 				<td>{{ name }}</td>
@@ -121,14 +125,7 @@
 		{% endfor %} -->
 		
   	</table>
-
-
-
-
-
-
-
-	</div>
+</div>
 
 
 
@@ -142,6 +139,3 @@
     <script src="../static/js/main.js"></script>
 
 </body>
-<!-- 
-<footer style='postion:absolute;bottom:10;'>HackingEdu Hackathon 2015</footer> -->
-

@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    signed_in= False
-    return render_template('index.html', )
+    queryStarted= False
+    return render_template('index.html',queryStarted=queryStarted )
     
 
 if __name__ == "__main__":
