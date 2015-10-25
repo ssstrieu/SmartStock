@@ -57,6 +57,8 @@
 
 </div>
 
+
+
 {%  if queryStarted==True %}
 <div class='container chart-container'>
 
@@ -64,11 +66,11 @@
 		<tr class='info'>
 			<th>Symbol</th>
 			<th>Name</th>
-			<th>Price/Share</th>
-			<th>Market Cap</th>
-			<th>P/E Ratio</th>
-			<th>PEG Ratio</th>
-			<th>EPS</th>
+			<th>Price per Share</th>
+			<th>Market Cap <span type="button" class="glyphicon glyphicon-info-sign" data-container="body" data-toggle="popover" data-placement="top" data-content="Market Cap: The total value investors are placing in the company at any moment in time."></span></th>
+			<th>P/E Ratio <span type="button" class="glyphicon glyphicon-info-sign" data-container="body" data-toggle="popover" data-placement="top" data-content="P/E Ratio (Price-earnings ratio): How much the market values the shares versus the actual earnings. "></span></th>
+			<th>PEG Rate <span type="button" class="glyphicon glyphicon-info-sign" data-container="body" data-toggle="popover" data-placement="top" data-content="PEG Rate: Compares Price/Earnings ratio (P/E) with the growth rate of earnings (G) to determing if the growth rate is being reflected in the current price"></span></th>
+			<th>EPS<span type="button" class="glyphicon glyphicon-info-sign" data-container="body" data-toggle="popover" data-placement="top" data-content="EPS (Earnings per Share)"></span></th>
 		</tr>
 		
 		{% for quote in quotes %}
