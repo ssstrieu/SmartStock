@@ -29,7 +29,7 @@
 <!-- MAIN CONTENT -->
 	<div class="container searchbar" style='PADDING:2% 0 0 0;'>
 		<div class='searchbar-container'>
-			<form action='/submitform' method='POST'>
+			<form action='/compare' method='POST'>
 	        <div class='row stockfields' STYLE='PADDING:10PX 0;'>
 	            <div class='col-md-2'>
 					<lable for='symbol' class='labels' style>Ticker Symbol</lable>
@@ -65,64 +65,24 @@
 			<th>Name</th>
 			<th>Price/Share</th>
 			<th>Market Cap</th>
-			<th>Sector</th>
-			<th>Expense Ratio</th>
 			<th>P/E Ratio</th>
 			<th>PEG Ratio</th>
 			<th>EPS</th>
 		</tr>
 		
+		{% for quote in quotes %}
 		<tr>
-			<td><a href='#'>AAA</a></td>
-			<td>company</td>
-			<td>$100</td>
-			<td>large cap</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><a href='#'>{{ quote['Symbol'] }}</a></td>
+			<td>{{ quote['Name'] }}</td>
+			<td>{{quote['Ask']}}</td>
+			<td>{{quote['MarketCapitalization']}}</td>
+			<td>{{quote['PERatio']}}</td>
+			<td>{{quote['PEGRatio']}}</td>
+			<td>{{quote['EPSEstimateNextQuarter']}}</td>
 		</tr>
 
-		<tr>
-			<td><a href='#'>AAA</a></td>
-			<td>company</td>
-			<td>$100</td>
-			<td>large cap</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+		{% endfor %}
 
-		<tr>
-			<td><a href='#'>AAA</a></td>
-			<td>company</td>
-			<td>$100</td>
-			<td>large cap</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-
-<!-- hook up to backend here to generate table rows		
-		{% for i in stocklist %}
-			<tr>
-				<td><a href='{{ link }}'>{{ symbol }} </a></td>
-				<td>{{ name }}</td>
-				<td>{{ price }}</td>
-				<td>{{ marketcap }}</td>
-				<td>{{ sector }}</td>
-				<td>{{ expenseratio }}</td>
-				<td>{{ PEratio }}</td>
-				<td>{{ PEGratio }}</td>
-				<td>{{ EPS }}</td>
-
-			</tr>
-		{% endfor %} -->
 		
   	</table>
 </div>
