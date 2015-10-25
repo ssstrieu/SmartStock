@@ -1,4 +1,29 @@
 body{
 	min-height:99%;
+	background-image: url(../img/graph_white.png);
+
+
+}
+
+.searchbar{
+	background-color: #222222;
+	width: 100%;
+
+}
+
+
+.searchbar lable{
+	color:#fff;
+
+}
+
+.searchbar-container{
+padding:0 10%;
+
+}
+
+
+table{
+	background-color: #fff;
 
 }
