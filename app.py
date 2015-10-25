@@ -15,7 +15,8 @@ def index():
 def compare():
 	symbols = stock.unicode_to_str(request.form.getlist('symbol'))
 	results = stock.stock_results(symbols) 
-	return render_template('index.html', quotes=results)
+	queryStarted=True
+	return render_template('index.html', quotes=results,queryStarted=queryStarted)
 
 
 if __name__ == "__main__":
