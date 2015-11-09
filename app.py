@@ -1,5 +1,4 @@
-import requests
-import stock
+import requests, os, stock
 from flask import Flask, request, redirect, render_template, session
 from werkzeug.datastructures import ImmutableMultiDict
 
@@ -20,4 +19,4 @@ def compare():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host=os.getenv('IP', '0.0.0.0'),port=int(os.getenv('PORT', 8080))) 
